@@ -1,1 +1,17 @@
-
+{
+  "usuarios": [
+    {
+      "id": 67,
+      "cpf": "067.067.067-67",
+      "nome": "Digo",
+      "endereco": {
+        "cep": "40026-280",
+        "logradouro": "Largo do Pelourinho",
+        "bairro": "Centro Histórico",
+        "cidade": "Salvador",
+        "estado": "BA"
+      },
+      "data_cadastro": "2026-07-02T01:07:32.687Z"
+    }
+  ]
+}

@@ -2,7 +2,8 @@
         body { background: #f4f4f4; padding: 20px; }
         .container { max-width: 800px; margin: 0 auto; }
         h1 { color: #333; margin-bottom: 20px; text-align: center; }
-        
+        h2 {height: 45px;}
+
         form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
         .form-group { margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: bold; }
@@ -10,8 +11,8 @@
         button { width: 100%; padding: 12px; background: #6d4aff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
         button:hover { background: #5b3add; }
         
-        .result { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px; }
-        .user-card { background: #f9f9f9; padding: 15px; margin-bottom: 10px; border-left: 4px solid #6d4aff; border-radius: 4px; }
+        .result { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px; }
+        .user-card { background: #f9f9f9; padding: 15px; margin-bottom: 8px; border-left: 4px solid #6d4aff; border-radius: 4px; }
         .address-info { background: #e8f5e9; padding: 10px; margin-top: 10px; border-radius: 4px; font-size: 14px; }
         .success { color: green; margin-top: 10px; }
         .error { color: red; margin-top: 10px; }

@@ -1,0 +1,25 @@
+{
+  "name": "sistema-beneficios",
+  "version": "1.0.0",
+  "description": "- Matheus Luiz, Daniel: sistemas de requisições http - Estevão, Vitor Jacomini: HTML&&CSS - Yasmin: Integração API ViaCEP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastercraft-deb/Sistema-Beneficios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mastercraft-deb/Sistema-Beneficios/issues"
+  },
+  "homepage": "https://github.com/mastercraft-deb/Sistema-Beneficios#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

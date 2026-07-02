@@ -10,7 +10,7 @@ const DATABASE_FILE = path.join(__dirname, 'database.json');
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '..')));
 
 // ============================================
 // FUNÇÃO PARA CARREGAR DADOS DO ARQUIVO
@@ -178,7 +178,28 @@ app.delete('/api/usuarios/:id', async (req, res) => {
     }
 });
 
-buscarCEP()
+// 6. CONSULTAR O CEP
+async function buscarEnderecoPorCep(cep) {
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+
+    if (!response.ok) {
+        throw new Error('Erro ao consultar o ViaCEP');
+    }
+
+    const dados = await response.json();
+
+    if (dados.erro) {
+        throw new Error('CEP não encontrado');
+    }
+
+    return {
+        cep: dados.cep,
+        logradouro: dados.logradouro,
+        bairro: dados.bairro,
+        cidade: dados.localidade,
+        estado: dados.uf
+    };
+}
 
 // ============================================
 // INICIAR O SERVIDOR
